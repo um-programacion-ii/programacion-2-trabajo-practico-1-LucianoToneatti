@@ -1,4 +1,48 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/-JQrLgaz)
 # 🧠 Trabajo Práctico: Sistema de Gestión de Vehículos (Java + SOLID + GitHub)
+
+## Alumno: Luciano Toneatti
+
+## ⚙️ Requisitos previos
+Para compilar y ejecutar este proyecto necesitás tener instalado lo siguiente:
+
+✅ Java Development Kit (JDK) 8 o superior
+
+✅ IntelliJ IDEA (recomendado)
+
+✅ Git para clonar el repositorio desde GitHub
+
+## 🚀 Instrucciones para ejecutar el proyecto
+🛠️ Pasos para compilar y ejecutar:
+
+Clonar el repositorio: git@github.com:um-programacion-ii/programacion-2-trabajo-practico-1-Luciano-Toneatti.git
+
+Navegar al directorio del proyecto:
+cd programacion-2-trabajo-practico-1-Luciano-Toneatti
+cd src
+
+Compilar la carpeta src 
+
+Ejecutar el programa de Main que esta dentro de src/app:
+java app.Main
+
+## 💡 Ejemplos de uso
+Cuando ejecutes el proyecto, se imprimirá en consola una lista de vehículos gestionados (camiones y autos) con sus datos:
+
+🚛 Vehículo: Camión
+Patente: ABC123
+Marca: Scania
+Año: 2020
+Capacidad de Carga: 5000.0kg
+¿Tiene acoplado?: Sí
+
+🚗 Vehículo: Auto
+Patente: XYZ789
+Marca: Toyota
+Año: 2022
+Capacidad de Carga: 300.0kg
+Cantidad de pasajeros: 5
+
 
 ## 📌 Objetivo General
 
@@ -56,43 +100,43 @@ Cada grupo debe:
 1. Usar la asignación del repositorio compartido por Slack
 
 2. **Proteger la rama main**:
-   - Ir a Settings > Branches > Branch protection rules
-   - Agregar regla para la rama `main`
-   - Requerir que los tests pasen antes de mergear
-   - No permitir push directo a main
+    - Ir a Settings > Branches > Branch protection rules
+    - Agregar regla para la rama `main`
+    - Requerir que los tests pasen antes de mergear
+    - No permitir push directo a main
 
 3. Crear un **Project** nuevo tipo _Kanban_ con columnas:
-   - `To Do`, `In Progress`, `In Review`, `Done`
+    - `To Do`, `In Progress`, `In Review`, `Done`
 
 4. Crear un **Milestone por etapa**:
-   - `Etapa 1 - Clases básicas`
-   - `Etapa 2 - SRP`
-   - `Etapa 3 - OCP`
-   - `Etapa 4 - LSP`
-   - `Etapa 5 - ArrayList`
+    - `Etapa 1 - Clases básicas`
+    - `Etapa 2 - SRP`
+    - `Etapa 3 - OCP`
+    - `Etapa 4 - LSP`
+    - `Etapa 5 - ArrayList`
 
 5. Crear **Issues** por cada tarea concreta, por ejemplo:
-   - "Crear clase Vehiculo"
-   - "Crear clase VehiculoPrinter"
-   - "Crear subclase Camion"
+    - "Crear clase Vehiculo"
+    - "Crear clase VehiculoPrinter"
+    - "Crear subclase Camion"
 
    Cada Issue debe:
-   - Tener un título claro y descripción breve
-   - Estar asociado a un `Milestone` y al `Project`
-   - Tener asignado al menos un miembro del equipo
-   - Incluir labels apropiados (ej: `enhancement`, `bug`, `documentation`)
-   - Ser implementado en una nueva rama (branch) creada desde `main`
-   - La rama debe seguir el formato: `feature/descripcion-corta` o `fix/descripcion-corta`
-   - Ser cerrado mediante un Pull Request (PR) que mergee la rama a `main`
-   - Actualizar su estado en el Kanban board según corresponda
+    - Tener un título claro y descripción breve
+    - Estar asociado a un `Milestone` y al `Project`
+    - Tener asignado al menos un miembro del equipo
+    - Incluir labels apropiados (ej: `enhancement`, `bug`, `documentation`)
+    - Ser implementado en una nueva rama (branch) creada desde `main`
+    - La rama debe seguir el formato: `feature/descripcion-corta` o `fix/descripcion-corta`
+    - Ser cerrado mediante un Pull Request (PR) que mergee la rama a `main`
+    - Actualizar su estado en el Kanban board según corresponda
 
 6. Hacer **Pull Requests** por cada Issue.
-   - Cada PR debe mencionar el Issue que cierra (ej: `Closes #2`)
-   - Debe incluir los mismos labels que el Issue asociado
-   - Debe estar asociado al mismo Milestone que el Issue
-   - Debe estar asociado al mismo Project que el Issue
-   - El código debe estar revisado antes de ser fusionado a `main`
-   - Al mergear, actualizar el estado del Issue en el Kanban board a `Done`
+    - Cada PR debe mencionar el Issue que cierra (ej: `Closes #2`)
+    - Debe incluir los mismos labels que el Issue asociado
+    - Debe estar asociado al mismo Milestone que el Issue
+    - Debe estar asociado al mismo Project que el Issue
+    - El código debe estar revisado antes de ser fusionado a `main`
+    - Al mergear, actualizar el estado del Issue en el Kanban board a `Done`
 
 ---
 
@@ -113,9 +157,9 @@ Implementar la clase base `Vehiculo` que servirá como punto de partida para la 
   private double capacidadCargaKg;
   ```
 - Implementar:
-  - Constructor con todos los atributos
-  - Getters y setters para cada atributo
-  - Método `mostrarInformacion()` que imprima todos los datos del vehículo
+    - Constructor con todos los atributos
+    - Getters y setters para cada atributo
+    - Método `mostrarInformacion()` que imprima todos los datos del vehículo
 
 #### Validaciones
 - La patente no puede ser null ni vacía
@@ -149,16 +193,10 @@ Implementar la clase base `Vehiculo` que servirá como punto de partida para la 
 - ✅ Todos los PRs revisados y mergeados
 - ✅ Project con todas las tareas en `Done`
 - ✅ Este archivo `README.md` completo con:
-  - Nombre y apellido del alumno
-  - Instrucciones detalladas de cómo ejecutar el proyecto
-  - Requisitos previos (JDK, IDE, etc.)
-  - Pasos para compilar y ejecutar
-  - Ejemplos de uso
+    - Nombre y apellido del alumno
+    - Instrucciones detalladas de cómo ejecutar el proyecto
+    - Requisitos previos (JDK, IDE, etc.)
+    - Pasos para compilar y ejecutar
+    - Ejemplos de uso
 
 > ⏰ **Fecha de vencimiento**: 09/04/2025 a las 13:00 hs
-
----
-
-## 📝 Licencia
-
-Este trabajo es parte del curso de Programación 2 de Ingeniería en Informática. Uso educativo únicamente.
